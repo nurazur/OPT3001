@@ -1,12 +1,11 @@
-ClosedCube Arduino Library for
-ClosedCube OPT3001 Digital Ambient Light Sensor (ALS) with High Precision Human Eye Response Breakout 
+OPT3001 Digital Ambient Light Sensor (ALS) Library 
 =====================================================================================================
 
-This is breakout board for [Texas Instruments OPT3001](http://www.ti.com/product/OPT3001) Digital Ambient Light Sensor (ALS) Sensor
+Arduino library for the  [Texas Instruments OPT3001](http://www.ti.com/product/OPT3001) Digital Ambient Light Sensor (ALS) Sensor.
+The OPT3001 allows to measure light illuminance in Lux units in a very simple way. 
+The original library from [ClosedCube](https://www.arduino.cc/reference/en/libraries/closedcube-opt3001/) has been amended by methods 
+to allow single-shot measurements with or without hardware interrupt. 
 
-[![](https://github.com/closedcube/ClosedCube_OPT3001_Arduino/blob/master/images/B060_OPT3001_Pic1.jpg)](https://www.tindie.com/stores/closedcube/)
-[![](https://github.com/closedcube/ClosedCube_OPT3001_Arduino/blob/master/images/B060_OPT3001_Pic2.jpg)](https://www.tindie.com/stores/closedcube/)
+The most energy efficient method is to initiate a single-shot measurement, put the MCU to sleep while the OPT3001 integrates samples, and wake up the MCU as soon as the result is available by a hardware interrupt of the OPT3001.
 
-
-
-
+Some of the single-shot examples are especially made for ATmega0 and AVR Dx series MCU's (for example ATmega4808 or AVR64DD32). Therefore the TiNo2 library is used to support pin change interrupts, RTC and sleep methods.
