@@ -149,7 +149,7 @@ OPT3001_ErrorCode ClosedCube_OPT3001::writeData(OPT3001_Commands command)
 
 OPT3001_ErrorCode ClosedCube_OPT3001::readData(uint16_t* data)
 {
-    uint8_t buf[2];
+    uint8_t buf[2] = {0,0};
 
     Wire.requestFrom(_address, (uint8_t)2);
 
