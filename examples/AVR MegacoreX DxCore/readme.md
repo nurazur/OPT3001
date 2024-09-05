@@ -5,5 +5,5 @@ AVR DD and DA series are AVRxxDDyy and AVRxxDAyy devices, where xx is the flash 
 
 Examples were tested on ATmega4808 and AVR64DD32 based TiNo2 devices.
 
-Any device supported by MegacoreX or DxCore will be working, Arduino IDE as well as platformio 
+Any device supported by [MegacoreX](https://github.com/MCUdude/MegaCoreX) or [DxCore](https://github.com/SpenceKonde/DxCore) will be working, Arduino IDE as well as platformio 
 
