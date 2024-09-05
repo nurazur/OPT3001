@@ -8,4 +8,4 @@ to allow single-shot measurements with or without hardware interrupt.
 
 The most energy efficient method is to initiate a single-shot measurement, put the MCU to sleep while the OPT3001 integrates samples, and wake up the MCU by a hardware interrupt of the OPT3001, as soon as the result is available .
 
-Some of the single-shot examples are especially made for ATmega0 and AVR Dx series MCU's (for example ATmega4808 or AVR64DD32). Therefore the TiNo2 library is used to support pin change interrupts, RTC and sleep methods.
+Some of the single-shot examples are especially made for ATmega0 and AVR Dx series MCU's (for example ATmega4808 or AVR64DD32). Therefore the [TiNo2 library](https://github.com/nurazur/TiNo2) is used to support pin change interrupts, RTC and sleep methods.
